@@ -1,0 +1,19 @@
+{
+  "name": "avalia-aqui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alaodev/avalia-aqui.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alaodev/avalia-aqui/issues"
+  },
+  "homepage": "https://github.com/alaodev/avalia-aqui#readme"
+}
