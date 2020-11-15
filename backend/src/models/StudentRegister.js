@@ -3,7 +3,7 @@ const con = require('../db/connection');
 class StudentRegister {
   
   index(res) {
-    const sql = 'SELECT * FROM students';
+    const sql = 'SELECT * FROM student';
 
     con.query(sql, (err, result) => {
       if (err) {
@@ -15,7 +15,7 @@ class StudentRegister {
   }
 
   showById(res, register) {
-    const sql = 'SELECT * FROM students WHERE register = ?';
+    const sql = 'SELECT * FROM student WHERE register = ?';
 
     con.query(sql, register, (err, result) => {
       if (err) {
@@ -27,7 +27,7 @@ class StudentRegister {
   }
 
   create(res, data) {
-    const sql = 'INSERT INTO students SET ?';
+    const sql = 'INSERT INTO student SET ?';
     
     con.query(sql, data, (err, result) => {
       if (err) {
@@ -39,7 +39,7 @@ class StudentRegister {
   }
 
   delete(res, register) {
-    const sql = 'DELETE FROM students WHERE register = ?';
+    const sql = 'DELETE FROM student WHERE register = ?';
 
     con.query(sql, register, (err, result) => {
       if (err) {
@@ -51,7 +51,7 @@ class StudentRegister {
   }
 
   update(res, register, data) {
-    const sql = 'UPDATE students SET ? WHERE register = ?';
+    const sql = 'UPDATE student SET ? WHERE register = ?';
 
     con.query(sql, [data, register], (err, result) => {
       if (err) {

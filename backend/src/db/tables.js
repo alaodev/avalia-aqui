@@ -1,17 +1,17 @@
 class Tables {
     init(con) {
         this.con = con;
-        this.createTableStudents();
-        this.createTableTeachers();
-        this.createTableAvaliations();
-        this.alterTableStudents();
-        this.alterTableTeachers();
+        this.createTableStudent();
+        this.createTableTeacher();
+        this.createTableAvaliation();
+        this.alterTableStudent();
+        this.alterTableTeacher();
         this.alterPkAvaliation();
     }
 
-    createTableStudents() {
+    createTableStudent() {
         const sql = `
-            CREATE TABLE IF NOT EXISTS students(
+            CREATE TABLE IF NOT EXISTS student(
                 register VARCHAR(14) PRIMARY KEY,
                 username VARCHAR(255) NOT NULL
             );
@@ -21,14 +21,14 @@ class Tables {
             if (err) {
                 console.log(err);
             } else {
-                console.log('Table students successfully created.');
+                console.log('Table student successfully created.');
             }
         });
     }
 
-    createTableTeachers() {
+    createTableTeacher() {
         const sql = `
-            CREATE TABLE IF NOT EXISTS teachers(
+            CREATE TABLE IF NOT EXISTS teacher(
                 id INTEGER PRIMARY KEY AUTO_INCREMENT,
                 name VARCHAR(255) NOT NULL
             );
@@ -38,12 +38,12 @@ class Tables {
             if (err) {
                 console.log(err);
             } else {
-                console.log('Table teachers successfully created.');
+                console.log('Table teacher successfully created.');
             }
         });
     }
 
-    createTableAvaliations() {
+    createTableAvaliation() {
         const sql = `
             CREATE TABLE IF NOT EXISTS avaliation(
                 note1 INTEGER NOT NULL,
@@ -51,8 +51,8 @@ class Tables {
                 note3 INTEGER NOT NULL,
                 note4 INTEGER NOT NULL,
                 note5 INTEGER NOT NULL,
-                id_students VARCHAR(14) NOT NULL,
-                id_teachers INTEGER NOT NULL
+                id_student VARCHAR(14) NOT NULL,
+                id_teacher INTEGER NOT NULL
             );
         `;
 
@@ -60,37 +60,37 @@ class Tables {
             if (err) {
                 console.log(err);
             } else {
-                console.log('Table avaliations successfully created.');
+                console.log('Table avaliation successfully created.');
             }
         });
     }
 
-    alterTableStudents() {
+    alterTableStudent() {
         const sql = `
             ALTER TABLE avaliation
-            ADD CONSTRAINT fk_students FOREIGN KEY (id_students) REFERENCES students (register);
+            ADD CONSTRAINT fk_student FOREIGN KEY (id_student) REFERENCES student (register);
         `;
 
         this.con.query(sql, (err) => {
             if (err) {
                 console.log(err);
             } else {
-                console.log('Alter table students successfully executed.');
+                console.log('Alter table student successfully executed.');
             }
         });
     }
 
-    alterTableTeachers() {
+    alterTableTeacher() {
         const sql = `
             ALTER TABLE avaliation
-            ADD CONSTRAINT fk_teachers FOREIGN KEY (id_teachers) REFERENCES teachers (id);
+            ADD CONSTRAINT fk_teacher FOREIGN KEY (id_teacher) REFERENCES teacher (id);
         `;
 
         this.con.query(sql, (err) => {
             if (err) {
                 console.log(err);
             } else {
-                console.log('Alter table teachers successfully executed.');
+                console.log('Alter table teacher successfully executed.');
             }
         });
     }
@@ -98,7 +98,7 @@ class Tables {
     alterPkAvaliation() {
         const sql = `
             ALTER TABLE avaliation
-            ADD CONSTRAINT pk_avaliation PRIMARY KEY (id_students, id_teachers);
+            ADD CONSTRAINT pk_avaliation PRIMARY KEY (id_student, id_teacher);
         `;
 
         this.con.query(sql, (err) => {

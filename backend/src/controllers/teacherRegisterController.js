@@ -1,5 +1,4 @@
-const { showById } = require('../models/TeachersRegister');
-const TeacherRegister = require('../models/TeachersRegister');
+const TeacherRegister = require('../models/TeacherRegister');
 
 module.exports = {
 

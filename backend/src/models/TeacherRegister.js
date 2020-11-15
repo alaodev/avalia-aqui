@@ -3,7 +3,7 @@ const con = require('../db/connection');
 class TeacherRegister {
 
     index(res) {
-        const sql = 'SELECT * FROM teachers';
+        const sql = 'SELECT * FROM teacher';
 
         con.query(sql, (err, result) => {
             if (err) {
@@ -15,7 +15,7 @@ class TeacherRegister {
     }
 
     showById(res, id) {
-        const sql = 'SELECT * FROM teachers WHERE id = ?';
+        const sql = 'SELECT * FROM teacher WHERE id = ?';
 
         con.query(sql, id, (err, result) => {
             if (err) {
@@ -27,7 +27,7 @@ class TeacherRegister {
     }
 
     create(res, data) {
-        const sql = 'INSERT INTO teachers SET ?';
+        const sql = 'INSERT INTO teacher SET ?';
 
         con.query(sql, data, (err, result) => {
             if (err) {
@@ -39,7 +39,7 @@ class TeacherRegister {
     }
 
     delete(res, id) {
-        const sql = 'DELETE FROM teachers WHERE id = ?';
+        const sql = 'DELETE FROM teacher WHERE id = ?';
 
         con.query(sql, id, (err, result) => {
             if (err) {
@@ -51,13 +51,12 @@ class TeacherRegister {
     }
 
     update(res, id, data) {
-        const sql = 'UPDATE teachers SET ? WHERE id = ?';
+        const sql = 'UPDATE teacher SET ? WHERE id = ?';
 
         con.query(sql, [data, id], (err, result) => {
             if (err) {
                 return res.json(err);
             } else {
-                console.log('in');
                 return res.json(result);
             }
         });
