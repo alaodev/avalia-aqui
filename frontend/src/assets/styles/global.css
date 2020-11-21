@@ -9,6 +9,16 @@
     --color-input-placeholder: #ACACAC;
     --color-form-title: #6D6D6D;
     --color-password-description: #ACACAC;
+    --color-dark-grey-text: #6D6D6D;
+    --color-light-grey-text: #DADADA;
+    --color-light-grey: #F2F2F2;
+    --color-dark-grey: #6D6D6D;
+    --color-gold: #FBAF31;
+    --color-dark-gold: #D8972B;
+    --color-silver: #B8B8B8;
+    --color-dark-silver: #828282;
+    --color-bronze: #EB7003;
+    --color-dark-bronze: #C76107;
 }
 
 * {

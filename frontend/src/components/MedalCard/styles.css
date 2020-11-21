@@ -1,0 +1,88 @@
+.gold-color {
+    background: var(--color-gold);
+}
+
+.gold-color .medalcard-teacher {
+    background: var(--color-dark-gold);
+}
+
+.silver-color {
+    background: var(--color-silver);
+}
+
+.silver-color .medalcard-teacher {
+    background: var(--color-dark-silver);
+}
+
+.bronze-color {
+    background: var(--color-bronze);
+}
+
+.bronze-color .medalcard-teacher {
+    background: var(--color-dark-bronze);
+}
+
+.medalcard-container {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .2);
+    height: 175px;
+    margin: 0 1.5rem;
+    width: 400px;
+}
+
+.medalcard-container .medalcard-teacher {
+    align-items: center;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    position: relative;
+}
+
+.medalcard-container .medalcard-teacher .medalcard-teacher-image {
+    left: 0;
+    margin-left: -2rem;
+    position: absolute;
+    width: 6rem;
+}
+
+.medalcard-container .medalcard-teacher .medalcard-teacher-name {
+    color: var(--color-text-white);
+    font: 900 2rem Roboto;
+}
+
+.medalcard-container .medalcard-info {
+    align-items: center;
+    color: var(--color-text-white);
+    display: flex;
+    height: calc(100% - 40px);
+    justify-content: center;
+    padding: 0 1rem;
+}
+
+.medalcard-container .medalcard-info .medalcard-media {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;;
+}
+
+.medalcard-container .medalcard-info .medalcard-media .media {
+    font: 900 7rem Roboto;
+}
+
+.medalcard-container .medalcard-info .medalcard-media span:nth-child(2) {
+    font: 700 2rem Roboto;
+}
+
+.medalcard-container .medalcard-info .medalcard-extra {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+}
+
+.medalcard-container .medalcard-info .medalcard-extra span {
+    font: 700 2rem Roboto;
+    margin: .5rem 0;
+}

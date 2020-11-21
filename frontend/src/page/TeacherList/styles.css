@@ -1,0 +1,9 @@
+.teacherlist-container {
+    align-items: center;
+    background-image: linear-gradient(to right, var(--color-primary-light), var(--color-primary));
+    display: flex;
+    float: right;
+    justify-content: center;
+    height: 100vh;
+    width: calc(100% - 300px);
+}

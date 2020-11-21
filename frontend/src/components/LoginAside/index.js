@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
+import Link from 'react-router-dom/Link';
 import Switch from '@material-ui/core/Switch';
 
 import Input from '../Input';
 
 import logoImg from '../../assets/images/estrelado_logo.png';
-
-import './styles.css';
 
 export default function LoginAside() {
     
@@ -44,7 +43,9 @@ export default function LoginAside() {
                 </div>
                 <div className="buttons-container">
                     <button className="button-primary">ENTRAR</button>
-                    <button className="button-secondary">CADASTRE-SE</button>
+                    <Link to="/register">
+                        <button className="button-secondary">CADASTRE-SE</button>
+                    </Link>
                 </div>
             </form>
         </div>

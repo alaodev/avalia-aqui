@@ -4,8 +4,6 @@ import Input from '../Input';
 
 import logoImg from '../../assets/images/estrelado_logo.png';
 
-import './styles.css';
-
 export default function CreatePassword() {
 
     return(

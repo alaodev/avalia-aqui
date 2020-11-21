@@ -1,10 +1,9 @@
 import React from 'react';
+import Link from 'react-router-dom/Link';
 
 import Input from '../Input';
 
 import logoImg from '../../assets/images/estrelado_logo.png';
-
-import './styles.css';
 
 export default function RegisterAside() {
 
@@ -24,8 +23,12 @@ export default function RegisterAside() {
                     type="password"
                 />
                 <div className="buttons-container">
-                    <button className="button-primary">VALIDAR</button>
-                    <button className="button-secondary">JÁ TENHO UM LOGIN</button>
+                    <Link to="/create-password">
+                        <button className="button-primary">VALIDAR</button>
+                    </Link>
+                    <Link to="/">
+                        <button className="button-secondary">JÁ TENHO UM LOGIN</button>
+                    </Link>
                 </div>
             </form>
         </div>
