@@ -1,10 +1,10 @@
-import Login from './page/Login';
+import Authentication from './page/Authentication';
 
 import './assets/styles/global.css';
 
 function App() {
     return (
-        <Login />
+        <Authentication />
     );
 }
 
