@@ -1,0 +1,24 @@
+:root {
+    font-size: 60%;
+
+    --color-primary: #FCB500;
+    --color-primary-light: #F9DB3F;
+    --color-secondary: #5BC0DE;
+    --color-text-white: #FFFFFF;
+    --color-input-text: #6D6D6D;
+    --color-input-placeholder: #ACACAC;
+    --color-form-title: #6D6D6D;
+    --color-password-description: #ACACAC;
+}
+
+* {
+    box-sizing: border-box;
+    font: 400 1.6rem Roboto;
+    margin: 0;
+    padding: 0;
+}
+
+html, body #root {
+    height: 100vh;
+    width: 100vw;
+}

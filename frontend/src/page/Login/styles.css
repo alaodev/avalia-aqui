@@ -1,0 +1,128 @@
+.login-container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+.login-container .hints-container {
+    align-items: center;
+    background-image: linear-gradient(to right, var(--color-primary-light), var(--color-primary));
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    padding: 5rem;
+    width: calc(100% - 450px);
+}
+
+.login-container .hints-container .hint-item {
+    align-items: center;
+    color: var(--color-text-white);
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    outline: none;
+    text-align: center;
+}
+
+.login-container .hints-container .hint-item .hint-img {
+    max-width: 250px;
+    min-width: 150px;
+    width: 30%;
+}
+
+.login-container .hints-container .hint-item .hint-title {
+    font: 900 6rem Roboto;
+    margin: 2rem 0;
+}
+
+.login-container .hints-container .hint-item .hint-description {
+    font: 400 2.5rem Roboto;
+    max-width: 800px;
+}
+
+.slick-dots li button:before,
+.slick-dots li.slick-active button:before  {
+    color: var(--color-text-white);
+    font-size: 2rem;
+    margin: 2rem 0;
+}
+
+.login-container .login-aside {
+    align-items: center;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-evenly;
+    padding: 5rem;
+    right: 0;
+    width: 450px;
+}
+
+.login-container .login-aside img{
+    width: 200px;
+}
+
+.login-container .login-aside .login-form .login-form-title {
+    color: var(--color-form-title);
+    font: 900 2.5rem Roboto;
+    margin: 2rem 0;
+}
+
+.login-container .login-aside .login-form input {
+    border: 0;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, .3);
+    color: var(--color-input-text);
+    font-size: 2rem;
+    height: 6rem;
+    margin: 1rem 0;
+    outline: none;
+    padding: 0 2rem;
+    width: 100%;
+}
+
+.login-container .login-aside .login-form input::placeholder {
+    color: var(--color-input-placeholder);
+}
+
+.login-container .login-aside .login-form .password-container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-container .login-aside .login-form .password-container .remember-password label,
+.login-container .login-aside .login-form .password-container a {
+    color: var(--color-password-description);
+}
+
+.login-container .login-aside .login-form .password-container a  {
+    text-decoration: none;
+}
+
+.login-container .login-aside .login-form .password-container a:hover  {
+    text-decoration: underline;
+}
+
+.login-container .login-aside .login-form .buttons-container button {
+    cursor: pointer;
+    font: 900 2rem Roboto;
+    height: 6rem;
+    outline: none;
+    width: 100%;
+}
+
+.login-container .login-aside .login-form .buttons-container .button-login {
+    background: var(--color-secondary);
+    border: none;
+    color: var(--color-text-white);
+    font: 900 2rem Roboto;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.login-container .login-aside .login-form .buttons-container .button-register {
+    background: transparent;
+    border: .5rem solid var(--color-secondary);
+    color: var(--color-secondary);
+}
