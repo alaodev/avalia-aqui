@@ -15,10 +15,12 @@
     --color-dark-grey: #6D6D6D;
     --color-gold: #FBAF31;
     --color-dark-gold: #D8972B;
+    --color-white: #FFFFFF;
     --color-silver: #B8B8B8;
     --color-dark-silver: #828282;
     --color-bronze: #EB7003;
     --color-dark-bronze: #C76107;
+    --transition-speed: 600ms;
 }
 
 * {

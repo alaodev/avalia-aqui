@@ -3,7 +3,7 @@ import TextField from '@material-ui/core/TextField';
 import Autocomplete from '@material-ui/lab/Autocomplete';
 
 import MedalCard from '../../components/MedalCard';
-import Sidebar from '../../components/Sidebar'
+import Navbar from '../../components/Navbar'
 
 import goldMedal from '../../assets/images/icons/gold-medal.svg';
 import silverMedal from '../../assets/images/icons/silver-medal.svg';
@@ -22,11 +22,11 @@ export default function TeacherList(props) {
 
     return(
         <Fragment>
-            <Sidebar />
+            <Navbar />
             <div className="teacherlist-container">
                 <div style={{width: '100%', display: 'flex', marginBottom: 50, justifyContent: 'center'}}>
-                    <MedalCard medal="gold-color" image={goldMedal} />
                     <MedalCard medal="silver-color" image={silverMedal} />
+                    <MedalCard medal="gold-color" image={goldMedal} />
                     <MedalCard medal="bronze-color" image={bronzeMedal} />
                 </div>
                 <div>
