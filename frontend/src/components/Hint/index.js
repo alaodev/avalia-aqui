@@ -10,6 +10,7 @@ import '../../../node_modules/slick-carousel/slick/slick-theme.css';
 
 import './styles.css'
 
+
 export default function Hint() {
 
     const settings = {
@@ -27,6 +28,7 @@ export default function Hint() {
             <Slider style={{width: '80%'}} {...settings}>
                 <div className="hint-item">
                     <img
+                        alt="logo"
                         className="hint-img"
                         src={flatAvaliation}
                     />
@@ -37,6 +39,7 @@ export default function Hint() {
                 </div>
                 <div className="hint-item">
                     <img
+                        alt="logo"
                         className="hint-img"
                         src={flatSecurity}
                     />
@@ -47,6 +50,7 @@ export default function Hint() {
                 </div>
                 <div className="hint-item">
                     <img
+                        alt="logo"
                         className="hint-img"
                         src={flatAnonymous}
                     />

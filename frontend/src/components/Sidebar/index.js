@@ -29,12 +29,12 @@ export default function Sidebar() {
                     </div>
                 </div>
             </div>
-            <div className="sidebar-bottom-content">
-                <div className="menu-item">
-                    <FaSignOutAlt className="menu-item-icon"/>
-                    <span className="menu-item-title">Sair</span>
+                <div className="sidebar-bottom-content">
+                    <div className="menu-item">
+                        <FaSignOutAlt className="menu-item-icon"/>
+                        <span className="menu-item-title">Sair</span>
+                    </div>
                 </div>
-            </div>
         </div>
     );
 }
